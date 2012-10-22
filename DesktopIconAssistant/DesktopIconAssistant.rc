@@ -1,0 +1,393 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\DesktopIconAssistant.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DesktopIconAssistant.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 202, 147
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于桌面图标排列助手"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "桌面图标排列助手1.2",IDC_STATIC,42,14,76,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008 Ben Yuan",IDC_STATIC,43,114,114,11
+    DEFPUSHBUTTON   "确定",IDOK,145,126,50,14,WS_GROUP
+    LTEXT           "做这个工具送给xdjm们，希望你们不仅能让“桌面”布上“爱”，也能让生活充满“爱”:)\n\n界面上的大部分图片来自网络(只有图标和几个小图片是自己画的)，版权属于原作者。\n\n我的Email: vyxl@163.com",IDC_STATIC,43,30,143,72
+END
+
+IDD_DESKTOPICONASSISTANT_DIALOG DIALOGEX 0, 0, 215, 236
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "_",IDC_BUTTON_MIN,125,8,10,8
+    PUSHBUTTON      "╳",IDC_BUTTON_CLOSE,135,8,10,8
+    PUSHBUTTON      "Up",IDC_BUTTON_UP,107,23,20,13
+    PUSHBUTTON      "Left",IDC_BUTTON_LEFT,85,35,20,13
+    PUSHBUTTON      "Right",IDC_BUTTON_RIGHT,129,37,20,13
+    PUSHBUTTON      "Down",IDC_BUTTON_DOWN,108,47,20,13
+    PUSHBUTTON      "Heart",IDC_BUTTON_HEART,63,65,47,15
+    PUSHBUTTON      "Line",IDC_BUTTON_LINE,63,135,47,15,BS_FLAT
+    PUSHBUTTON      "Oval",IDC_BUTTON_OVAL,63,121,47,15
+    PUSHBUTTON      "Hollow Rect",IDC_BUTTON_HOLLOW_RECT,63,93,47,15
+    PUSHBUTTON      "Fill Rect",IDC_BUTTON_FILL_RECT,63,107,47,15
+    PUSHBUTTON      "Big",IDC_BUTTON_BIG,123,99,29,11
+    PUSHBUTTON      "Mid",IDC_BUTTON_MID,123,111,29,11
+    PUSHBUTTON      "Small",IDC_BUTTON_SMALL,123,123,29,11
+    PUSHBUTTON      "Auto",IDC_BUTTON_AUTO,123,135,29,11
+    PUSHBUTTON      "Custom",IDC_BUTTON_CUSTOM,123,147,29,11
+    EDITTEXT        IDC_EDIT_SPACE,156,147,33,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "→",IDC_BUTTON_REDO,112,8,10,8
+    PUSHBUTTON      "←",IDC_BUTTON_UNDO,101,8,10,8
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,27,143,32,14
+    PUSHBUTTON      "Load",IDC_BUTTON_LOAD,27,161,34,14
+    PUSHBUTTON      "E",IDC_BUTTON_EXCHANGE,87,8,10,8
+    PUSHBUTTON      "H",IDC_BUTTON_HIDE_TEXT,76,8,10,8
+    PUSHBUTTON      "Bezier",IDC_BUTTON_BEZIER,63,79,47,15
+END
+
+IDD_DESKTOP DIALOGEX 0, 0, 319, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_LAYERED
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,59,45,38,36
+    PUSHBUTTON      "Cancel",IDCANCEL,121,45,38,36
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "Ben Yuan编写, Email: vyxl@163.com"
+            VALUE "CompanyName", "Ben Yuan"
+            VALUE "FileDescription", "桌面图标排列助手(vyxl@163.com)"
+            VALUE "FileVersion", "1.2"
+            VALUE "InternalName", "DesktopIconAssistant.exe"
+            VALUE "LegalCopyright", "(C) Ben Yuan。保留所有权利。"
+            VALUE "OriginalFilename", "DesktopIconAssistant.exe"
+            VALUE "ProductName", "桌面图标排列助手"
+            VALUE "ProductVersion", "1.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_DESKTOPICONASSISTANT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_DESKTOP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BG                  BITMAP                  "res\\bg.bmp"
+IDB_SYSTEM_DOWN         BITMAP                  "res\\system_down.bmp"
+IDB_SYSTEM_NORMAL       BITMAP                  "res\\system_normal.bmp"
+IDB_SYSTEM_OVER         BITMAP                  "res\\system_over.bmp"
+IDB_RIGHT_NORMAL        BITMAP                  "res\\right_normal.bmp"
+IDB_LEFT_NORMAL         BITMAP                  "res\\left_normal.bmp"
+IDB_DOWN_NORMAL         BITMAP                  "res\\down_normal.bmp"
+IDB_DOWN_OVER           BITMAP                  "res\\down_over.bmp"
+IDB_LEFT_OVER           BITMAP                  "res\\left_over.bmp"
+IDB_RIGHT_OVER          BITMAP                  "res\\right_over.bmp"
+IDB_UP_NORMAL           BITMAP                  "res\\up_normal.bmp"
+IDB_UP_OVER             BITMAP                  "res\\up_over.bmp"
+IDB_HEART_OVER          BITMAP                  "res\\heart_over.bmp"
+IDB_HEART_NORMAL        BITMAP                  "res\\heart_normal.bmp"
+IDB_OVAL_OVER           BITMAP                  "res\\oval_over.bmp"
+IDB_OVAL_NORMAL         BITMAP                  "res\\Oval_normal.bmp"
+IDB_HOLLOWRECT_OVER     BITMAP                  "res\\hollowrect_over.bmp"
+IDB_FILLRECT_NORMAL     BITMAP                  "res\\fillrect_normal.bmp"
+IDB_FILLRECT_OVER       BITMAP                  "res\\fillrect_over.bmp"
+IDB_HOLLOWRECT_NORMAL   BITMAP                  "res\\hollowrect_normal.bmp"
+IDB_LINE_NORMAL         BITMAP                  "res\\line_normal.bmp"
+IDB_LINE_OVER           BITMAP                  "res\\line_over.bmp"
+IDB_AUTO_OVER           BITMAP                  "res\\auto_over.bmp"
+IDB_BIG_NORMAL          BITMAP                  "res\\big_normal.bmp"
+IDB_BIG_OVER            BITMAP                  "res\\big_over.bmp"
+IDB_CUSTOM_NORMAL       BITMAP                  "res\\custom_normal.bmp"
+IDB_CUSTOM_OVER         BITMAP                  "res\\custom_over.bmp"
+IDB_MID_NORMAL          BITMAP                  "res\\mid_normal.bmp"
+IDB_MID_OVER            BITMAP                  "res\\mid_over.bmp"
+IDB_SMALL_NORMAL        BITMAP                  "res\\small_normal.bmp"
+IDB_SMALL_OVER          BITMAP                  "res\\small_over.bmp"
+IDB_AUTO_NORMAL         BITMAP                  "res\\auto_normal.bmp"
+IDB_SMALL_DOWN          BITMAP                  "res\\small_down.bmp"
+IDB_BIG_DOWN            BITMAP                  "res\\big_down.bmp"
+IDB_MID_DOWN            BITMAP                  "res\\mid_down.bmp"
+IDB_CUSTOM_DOWN         BITMAP                  "res\\custom_down.bmp"
+IDB_AUTO_DOWN           BITMAP                  "res\\auto_down.bmp"
+IDB_DESKTOP_BG          BITMAP                  "res\\desktop_bg.bmp"
+IDB_CANCEL_NORMAL       BITMAP                  "res\\Cancel_normal.bmp"
+IDB_CANCEL_OVER         BITMAP                  "res\\Cancel_over.bmp"
+IDB_OK_NORMAL           BITMAP                  "res\\OK_normal.bmp"
+IDB_OK_OVER             BITMAP                  "res\\OK_over.bmp"
+IDB_LOAD_NORMAL         BITMAP                  "res\\load_normal.bmp"
+IDB_LOAD_OVER           BITMAP                  "res\\load_over.bmp"
+IDB_SAVE_NORMAL         BITMAP                  "res\\save_normal.bmp"
+IDB_SAVE_OVER           BITMAP                  "res\\save_over.bmp"
+IDB_BEZIER_NORMAL       BITMAP                  "res\\bezier_normal.bmp"
+IDB_BEZIER_OVER         BITMAP                  "res\\bezier_over.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU 
+BEGIN
+    POPUP "Tray Icon Menu"
+    BEGIN
+        MENUITEM "显示",                          ID_POPUP_SHOW
+        MENUITEM SEPARATOR
+        POPUP "间距"
+        BEGIN
+            MENUITEM "自动",                          ID_SPACE_AUTO
+            MENUITEM "大",                           ID_SPACE_BIG
+            MENUITEM "中",                           ID_SPACE_MID
+            MENUITEM "小",                           ID_SPACE_SMALL
+            MENUITEM "自定义",                         ID_SPACE_CUSTOM
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "— - 直线",                      ID_LINE
+        MENUITEM "～ - 曲线",                      ID_BEZIER
+        MENUITEM "■ - 矩形",                      ID_FILLRECT
+        MENUITEM "□ - 空心矩形",                    ID_HOLLOWRECT
+        MENUITEM "○ - 椭圆",                      ID_OVAL
+        MENUITEM "心形",                          ID_HEART
+        MENUITEM SEPARATOR
+        MENUITEM "交换",                          ID_EXCHANGE
+        POPUP "对齐"
+        BEGIN
+            MENUITEM "← 左对齐",                       ID_ALIGN_LEFT
+            MENUITEM "→ 右对齐",                       ID_ALIGN_RIGHT
+            MENUITEM "↑ 上对齐",                       ID_ALIGN_UP
+            MENUITEM "↓ 下对齐",                       ID_ALIGN_DOWN
+        END
+        POPUP "其它"
+        BEGIN
+            MENUITEM "撤销",                          ID_UNDO
+            MENUITEM "重复",                          ID_REDO
+            MENUITEM SEPARATOR
+            MENUITEM "保存",                          ID_SAVE
+            MENUITEM "读取",                          ID_LOAD
+            MENUITEM SEPARATOR
+            MENUITEM "隐藏图标文字",                      ID_HIDE_TEXT
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "关于",                          ID_ABOUT
+        MENUITEM "退出",                          ID_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于桌面图标排列助手"
+    IDS_FAIL_INIT           "初始化失败，未找到桌面图标，请重新启动程序。"
+    IDS_ERROR               "错误"
+    IDS_APP_NAME            "桌面图标排列助手"
+    IDS_TIP_CLOSE           "关闭"
+    IDS_TIP_MIN             "最小化"
+    IDS_TIP_UNDO            "撤销"
+    IDS_TIP_REDO            "重复"
+    IDS_TIP_EXCHANGE        "交换两个图标位置 "
+    IDS_TIP_HIDE            "隐藏图标文字"
+    IDS_ALERT               "提示"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TIP_LEFT            "向左对齐"
+    IDS_TIP_RIGHT           "向右对齐"
+    IDS_TIP_UP              "向上对齐"
+    IDS_TIP_DOWN            "向下对齐"
+    IDS_TIP_HEART           "心形"
+    IDS_TIP_OVAL            "椭圆"
+    IDS_TIP_FILLRECT        "矩形"
+    IDS_TIP_HOLLOWRECT      "空心矩形"
+    IDS_TIP_LINE            "直线"
+    IDS_TIP_BIG             "大间距"
+    IDS_TIP_MID             "中等间距"
+    IDS_TIP_SMALL           "小间距"
+    IDS_TIP_AUTO            "自动调节间距"
+    IDS_TIP_CUSTOM          "自定义间距"
+    IDS_TIP_SAVE            "保存桌面图标位置到文件"
+    IDS_TIP_LOAD            "从文件读取桌面图标位置"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FIX_ICON            "是否要固定图标位置? 固定过程不要移动鼠标。"
+    IDS_ICON_FIXED          "固定完毕"
+    IDS_CANNOT_UNDO         "无法撤销"
+    IDS_CANNOT_REDO         "无法重复"
+    IDS_SAVED               "保存成功"
+    IDS_LOADED              "读取成功"
+    IDS_SELECT_TWO_ICONS    "请选择两个图标。"
+    IDS_TIP_SHOW            "显示图标文字"
+    IDS_ICONS_SELECTED      "选择了%d个图标"
+    IDS_STRING137           "IDS_TIP_BEZIER"
+    IDS_TIP_BEZIER          "曲线"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\DesktopIconAssistant.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
